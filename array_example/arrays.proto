@@ -1,0 +1,18 @@
+syntax = "proto2"; 
+import "nanopb.proto"; 
+
+message Ideal_Pressure{
+    repeated float volume = 1 [(nanopb).max_count = 4]; 
+    repeated float num_moles = 2 [(nanopb).max_count = 4]; 
+    repeated float r_constant = 3 [(nanopb).max_count = 4]; 
+    repeated float temperature = 4 [(nanopb).max_count = 4]; 
+}
+
+message Pragmatic_VDW_Pressure{
+    repeated float a_constant = 5 [(nanopb).max_count = 4]; 
+    repeated float num_moles = 6 [(nanopb).max_count = 4]; 
+    repeated float volume = 7 [(nanopb).max_count = 4]; 
+    repeated float b_constant = 8 [(nanopb).max_count = 4]; 
+    repeated float r_constant = 9 [(nanopb).max_count = 4]; 
+    repeated float temperature = 10 [(nanopb).max_count = 4]; 
+}
