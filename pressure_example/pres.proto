@@ -1,0 +1,5 @@
+syntax = "proto2"; 
+
+message PressureMeasurements{
+    optional float pressure = 1;
+}

@@ -3,7 +3,7 @@
 #include </home/asyaakkus/protobuf_c_example/nanopb_example/pb_encode.h>
 #include </home/asyaakkus/protobuf_c_example/nanopb_example/pb_decode.h>
 #include "arrays.pb.h"
-#include "baroarrays.pb.c"
+#include "arrays.pb.c"
 #include "nanopb_example/pb.h"
 
 /*decode message*/
@@ -35,9 +35,9 @@ int main() {
 
     for (int i = 0; i < 4; i++) {
         fprintf(stdout, "The current variable is %f\n", idealmeasurements.volume, 
-                                                        idealmeasurements.num_moles, 
-                                                        idealmeasurements.r_constant, 
-                                                        idealmeasurements.temperature); 
+                                                                       idealmeasurements.num_moles, 
+                                                                       idealmeasurements.r_constant, 
+                                                                       idealmeasurements.temperature); 
     }
 }
 }
